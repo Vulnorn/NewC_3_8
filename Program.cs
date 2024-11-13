@@ -24,16 +24,14 @@ namespace NewC_3_8
             Console.WriteLine($"\nВведите количество здвигов массива.");
             inputUser = Convert.ToInt32(Console.ReadLine());
 
-            while (inputUser != 0)
+            for (int i = inputUser; i > 0; i--)
             {
-                for (int i = 1; i < numbers.Length; i++)
+                for (int j = 1; j < numbers.Length; j++)
                 {
                     int bufferNumder = numbers[i - 1];
-                    numbers[i - 1] = numbers[i];
-                    numbers[i] = bufferNumder;
+                    numbers[j - 1] = numbers[i];
+                    numbers[j] = bufferNumder;
                 }
-
-                inputUser--;
             }
 
             Console.WriteLine();
