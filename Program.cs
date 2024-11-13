@@ -28,8 +28,8 @@ namespace NewC_3_8
             {
                 for (int j = 1; j < numbers.Length; j++)
                 {
-                    int bufferNumder = numbers[i - 1];
-                    numbers[j - 1] = numbers[i];
+                    int bufferNumder = numbers[j - 1];
+                    numbers[j - 1] = numbers[j];
                     numbers[j] = bufferNumder;
                 }
             }
